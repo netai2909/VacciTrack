@@ -1,4 +1,4 @@
-require('dotenv').config(); // Load environment variables
+// No dotenv needed for Render
 const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
