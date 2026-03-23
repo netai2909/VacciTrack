@@ -177,6 +177,6 @@ initDB().then(() => {
   // Use Render's dynamically assigned PORT or 4000 locally
   const PORT = process.env.PORT || 4000;
   server.listen(PORT, '0.0.0.0', () => {
-    console.log(\`\\n[Cloud Backend] Running on port \${PORT}\\n\`);
+    console.log(`\n[Cloud Backend] Running on port ${PORT}\n`);
   });
 });
