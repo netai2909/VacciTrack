@@ -15,55 +15,69 @@
   ],
   "vaccineExposure": {
     "Polio OPV": {
-      "damage": 0.19193611111111117,
-      "potency": 99.8080638888889
+      "damage": 0.2328047222222221,
+      "potency": 99.76719527777777
     },
     "Measles MMR": {
-      "damage": 0.19193611111111117,
-      "potency": 99.8080638888889
+      "damage": 0.2328047222222221,
+      "potency": 99.76719527777777
     },
     "BCG": {
-      "damage": 0.19193611111111117,
-      "potency": 99.8080638888889
+      "damage": 0.2328047222222221,
+      "potency": 99.76719527777777
     },
     "Varicella": {
-      "damage": 0.19193611111111117,
-      "potency": 99.8080638888889
+      "damage": 0.2328047222222221,
+      "potency": 99.76719527777777
     },
     "Rotavirus": {
-      "damage": 0.057580833333333345,
-      "potency": 99.94241916666667
+      "damage": 0.06984141666666664,
+      "potency": 99.93015858333334
     },
     "PCV": {
-      "damage": 0.057580833333333345,
-      "potency": 99.94241916666667
+      "damage": 0.06984141666666664,
+      "potency": 99.93015858333334
     },
     "IPV": {
-      "damage": 0.057580833333333345,
-      "potency": 99.94241916666667
+      "damage": 0.06984141666666664,
+      "potency": 99.93015858333334
     },
     "HPV": {
-      "damage": 0.057580833333333345,
-      "potency": 99.94241916666667
+      "damage": 0.06984141666666664,
+      "potency": 99.93015858333334
     },
     "Hepatitis B": {
-      "damage": 0.025591481481481493,
-      "potency": 99.97440851851852
+      "damage": 0.03104062962962963,
+      "potency": 99.96895937037037
     },
     "DPT": {
-      "damage": 0.025591481481481493,
-      "potency": 99.97440851851852
+      "damage": 0.03104062962962963,
+      "potency": 99.96895937037037
     },
     "Tetanus TT": {
-      "damage": 0.025591481481481493,
-      "potency": 99.97440851851852
+      "damage": 0.03104062962962963,
+      "potency": 99.96895937037037
     },
     "Pentavalent": {
-      "damage": 0.025591481481481493,
-      "potency": 99.97440851851852
+      "damage": 0.03104062962962963,
+      "potency": 99.96895937037037
     }
   },
   "alerts": [
+    {
+      "temp": 8.2,
+      "hum": 73,
+      "state": "WARNING",
+      "timestamp": "2026-03-23T23:51:36.889Z",
+      "message": "WARNING! 8.2°C — Check fridge: Polio OPV, Measles MMR, BCG, Varicella, Rotavirus, PCV, IPV, HPV, Hepatitis B, DPT, Tetanus TT, Pentavalent"
+    },
+    {
+      "temp": 8.1,
+      "hum": 70,
+      "state": "WARNING",
+      "timestamp": "2026-03-23T23:50:12.806Z",
+      "message": "WARNING! 8.1°C — Check fridge: Polio OPV, Measles MMR, BCG, Varicella, Rotavirus, PCV, IPV, HPV, Hepatitis B, DPT, Tetanus TT, Pentavalent"
+    },
     {
       "temp": 8.8,
       "hum": 68,

@@ -15,7 +15,7 @@ const io = new Server(server, { cors: { origin: '*' } });
 // Database Connection
 // Ensure special characters in the password are URL-encoded.
 // The password 'Netai@915305' becomes 'Netai%40915305'
-const DB_URL = process.env.DATABASE_URL || 'postgresql://postgres:Netai%40915305@db.lpzrqpkgeomgwoqyoapm.supabase.co:5432/postgres';
+const DB_URL = process.env.DATABASE_URL || 'postgresql://postgres.lpzrqpkgeomgwoqyoapm:Netai%40915305@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres';
 
 const pool = new Pool({
   connectionString: DB_URL,
