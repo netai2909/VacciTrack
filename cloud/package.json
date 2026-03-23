@@ -1,0 +1,16 @@
+{
+  "name": "vaccitrack-cloud",
+  "version": "1.0.0",
+  "description": "VacciTrack Cloud Backend",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "pg": "^8.20.0",
+    "socket.io": "^4.7.4",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "selectedVaccines": [
+    "Polio OPV",
+    "Measles MMR",
+    "BCG",
+    "Varicella",
+    "Rotavirus",
+    "PCV",
+    "IPV",
+    "HPV",
+    "Hepatitis B",
+    "DPT",
+    "Tetanus TT",
+    "Pentavalent"
+  ],
+  "vaccineExposure": {
+    "Polio OPV": {
+      "damage": 0.19193611111111117,
+      "potency": 99.8080638888889
+    },
+    "Measles MMR": {
+      "damage": 0.19193611111111117,
+      "potency": 99.8080638888889
+    },
+    "BCG": {
+      "damage": 0.19193611111111117,
+      "potency": 99.8080638888889
+    },
+    "Varicella": {
+      "damage": 0.19193611111111117,
+      "potency": 99.8080638888889
+    },
+    "Rotavirus": {
+      "damage": 0.057580833333333345,
+      "potency": 99.94241916666667
+    },
+    "PCV": {
+      "damage": 0.057580833333333345,
+      "potency": 99.94241916666667
+    },
+    "IPV": {
+      "damage": 0.057580833333333345,
+      "potency": 99.94241916666667
+    },
+    "HPV": {
+      "damage": 0.057580833333333345,
+      "potency": 99.94241916666667
+    },
+    "Hepatitis B": {
+      "damage": 0.025591481481481493,
+      "potency": 99.97440851851852
+    },
+    "DPT": {
+      "damage": 0.025591481481481493,
+      "potency": 99.97440851851852
+    },
+    "Tetanus TT": {
+      "damage": 0.025591481481481493,
+      "potency": 99.97440851851852
+    },
+    "Pentavalent": {
+      "damage": 0.025591481481481493,
+      "potency": 99.97440851851852
+    }
+  },
+  "alerts": [
+    {
+      "temp": 8.8,
+      "hum": 68,
+      "state": "WARNING",
+      "timestamp": "2026-03-23T22:29:48.184Z",
+      "message": "WARNING! 8.8°C — Check fridge: Polio OPV, Measles MMR, BCG, Varicella, Rotavirus, PCV, IPV, HPV, Hepatitis B, DPT, Tetanus TT, Pentavalent"
+    },
+    {
+      "temp": 8.2,
+      "hum": 87,
+      "state": "WARNING",
+      "timestamp": "2026-03-23T22:28:48.120Z",
+      "message": "WARNING! 8.2°C — Check fridge: Polio OPV, Measles MMR, BCG, Varicella, Rotavirus, PCV, IPV, HPV, Hepatitis B, DPT, Tetanus TT, Pentavalent"
+    }
+  ]
+}
