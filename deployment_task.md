@@ -7,15 +7,8 @@ Here is the exact checklist to achieve this:
 ## [x] 1. Set up a Free Cloud PostgreSQL Database (Supabase / Neon)
 **DONE!** The `cloud/index.js` file is now hardcoded to connect to your Supabase PostgreSQL database (`db.lpzrqpkgeomgwoqyoapm.supabase.co`).
 
-## [ ] 2. Host the Cloud Backend API (Render)
-Render makes hosting Node.js servers incredibly easy and free.
-1. Create a free account at [Render](https://render.com).
-2. Create a GitHub repository and push your entire `VacciTrack` folder to it.
-3. In Render, select **New Web Service**, connect your GitHub repo.
-4. Set the Root Directory to `cloud`.
-5. Set Build Command to `npm install`.
-6. Set Start Command to `node index.js`.
-7. Wait 5 minutes for it to deploy. You will get a link like `https://vaccitrack-cloud.onrender.com`.
+## [x] 2. Host the Cloud Backend API (Render)
+**DONE!** The Render deployment is live and communicating with Supabase.
 
 ## [ ] 3. Host the Frontend Website (Vercel or Netlify)
 This is where you'll visit the dashboard from your phone anywhere in the world.

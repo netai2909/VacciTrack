@@ -6,10 +6,16 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:4000',
+      '/api': {
+        target: 'https://vaccitrack-cloud.onrender.com',
+        changeOrigin: true,
+        secure: false,
+      },
       '/socket.io': {
-        target: 'http://localhost:4000',
-        ws: true
+        target: 'https://vaccitrack-cloud.onrender.com',
+        ws: true,
+        changeOrigin: true,
+        secure: false,
       }
     }
   }

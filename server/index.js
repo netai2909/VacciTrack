@@ -20,7 +20,7 @@ const io = new Server(server, { cors: { origin: '*' } });
 const DB_DIR  = path.join(__dirname, 'data');
 if (!fs.existsSync(DB_DIR)) fs.mkdirSync(DB_DIR);
 
-const CLOUD_URL = 'http://localhost:4000/api/data';
+const CLOUD_URL = 'https://vaccitrack-cloud.onrender.com/api/data';
 const SERIAL_PORT = 'COM5';
 
 const VACCINES = {
