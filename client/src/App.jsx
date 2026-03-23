@@ -3,7 +3,8 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { io } from "socket.io-client";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ResponsiveContainer, ReferenceArea } from "recharts";
 
-const socket = io(window.location.origin);
+const API_URL = import.meta.env.VITE_API_URL || "";
+const socket = io(API_URL || window.location.origin);
 
 // ── constants ─────────────────────────────────────────────────
 const STATE = {
@@ -123,17 +124,17 @@ export default function App() {
   const cfg = STATE[worstMonitored]??STATE.UNKNOWN;
 
   const notify   = useCallback((t,b)=>{ if(Notification.permission==="granted") new Notification(t,{body:b}); },[]);
-  const loadStats = () => fetch("/api/stats").then(r=>r.json()).then(setStats);
+  const loadStats = () => fetch(`${API_URL}/api/stats`).then(r=>r.json()).then(setStats);
 
   useEffect(()=>{
     Notification.requestPermission();
     Promise.all([
-      fetch("/api/vaccines").then(r=>r.json()),
-      fetch("/api/readings").then(r=>r.json()),
-      fetch("/api/alerts").then(r=>r.json()),
-      fetch("/api/exposure").then(r=>r.json()),
-      fetch("/api/selected-vaccines").then(r=>r.json()),
-      fetch("/api/status").then(r=>r.json()),
+      fetch(`${API_URL}/api/vaccines`).then(r=>r.json()),
+      fetch(`${API_URL}/api/readings`).then(r=>r.json()),
+      fetch(`${API_URL}/api/alerts`).then(r=>r.json()),
+      fetch(`${API_URL}/api/exposure`).then(r=>r.json()),
+      fetch(`${API_URL}/api/selected-vaccines`).then(r=>r.json()),
+      fetch(`${API_URL}/api/status`).then(r=>r.json()),
     ]).then(([v,rd,al,exp,sel,status])=>{
       setVaccines(v);
       const fmt=rd.map(d=>({...d,time:fmtTime(d.timestamp)}));
@@ -167,10 +168,10 @@ export default function App() {
   async function toggleVaccine(name) {
     const next=selectedVax.includes(name)?selectedVax.filter(n=>n!==name):[...selectedVax,name];
     setSelectedVax(next);
-    await fetch("/api/selected-vaccines",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({selected:next})});
+    await fetch(`${API_URL}/api/selected-vaccines`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({selected:next})});
   }
   async function resetData() {
-    await fetch("/api/reset",{method:"POST"}); setResetting(false); loadStats();
+    await fetch(`${API_URL}/api/reset`,{method:"POST"}); setResetting(false); loadStats();
   }
 
   const vaccineKeys   = Object.keys(vaccines);
